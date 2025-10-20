@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลงานของ Suzuka</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Noto Sans Thai', sans-serif;
+      background-color: #ffe0eb;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .thai { font-family: 'Noto Sans Thai', sans-serif; }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ff9ac1, #ff6db6);
+      color: white;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    header h1 { font-size: 32px; font-weight: 700; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ff4da6;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    nav a:hover { background-color: #ff4da6; color: #fff; transform: scale(1.05); }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .main-container {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .work-item {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      overflow: hidden;
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .work-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .work-item iframe {
+      width: 100%;       /* เต็มความกว้างของกล่อง */
+      height: 220px;     /* สูงขึ้นเล็กน้อย */
+      border: none;
+    }
+
+    .work-content {
+      padding: 20px;
+      text-align: center;
+    }
+    .work-content h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .work-content p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6c1;
+      color: #fff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .work-item { width: 90%; }
+      .work-item iframe { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ผลงานของ Suzuka</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับ</a>
+    <a href="work.html">ผลงาน</a>
+    <a href="suzuka.html">ติดตาม Suzuka</a>
+  </nav>
+
+  <main>
+    <div class="main-container">
+
+      <!-- ตัวอย่างวิดีโอ 1 -->
+      <div class="work-item">
+        <iframe src="https://www.youtube.com/embed/Ie90LB-7nkA?si=CmGOgWVhcHQt5UL6" allowfullscreen></iframe>
+        <div class="work-content">
+          <h3>Lastest MV</h3>
+          <p>MV เพลงล่าสุด</p>
+        </div>
+      </div>
+
+      <!-- ตัวอย่างวิดีโอ 2 -->
+      <div class="work-item">
+        <iframe src="https://www.youtube.com/embed/9MNPt-zlz-8?si=Jkd3BYoZAVJqbQ5N" allowfullscreen></iframe>
+        <div class="work-content">
+          <h3>Popular Song</h3>
+          <p>MV เพลงยอดนิยม</p>
+        </div>
+      </div>
+
+      <!-- ตัวอย่างวิดีโอ 3 -->
+      <div class="work-item">
+        <iframe src="https://www.youtube.com/embed/mut79ElOqBU?si=I6aE_9mtSI-6qNAL" allowfullscreen></iframe>
+        <div class="work-content">
+          <h3>Recommended Song</h3>
+          <p>MV เพลงแนะนำ</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 I LOVE ATARASHII GAKKO! - Nirawit Klaolamom
+  </footer>
+
+</body>
+</html>

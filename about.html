@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับ Suzuka</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Noto Sans Thai', sans-serif;
+      background-color: #ffe0eb;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .thai { font-family: 'Noto Sans Thai', sans-serif; }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ff9ac1, #ff6db6);
+      color: white;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    header h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ff4da6;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff4da6;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Main */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .main-container {
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    /* Profile Layout */
+    .profile {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .profile img {
+      width: 250px;
+      border-radius: 15px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .profile-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .profile-info p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .profile-details {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .profile-details li {
+      background-color: #fff0f5;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .profile-details li:hover {
+      background-color: #ffc0dd;
+    }
+
+    /* Buttons */
+    .main-btn {
+      align-self: start;
+      background-color: #ff69b4;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .main-btn:hover {
+      background-color: #ff4da6;
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6c1;
+      color: #fff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .main-btn {
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>เกี่ยวกับ Kanazawa Suzuka</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับ</a>
+    <a href="work.html">ผลงาน</a>
+    <a href="suzuka.html">ติดตาม Suzuka</a>
+  </nav>
+
+  <main>
+    <section class="main-container">
+      <h2 class="main-title thai">Suzuka คือใคร?</h2>
+
+      <div class="profile">
+        <img src="assets/images/SUZUKA 2.jpg" alt="Suzuka">
+        <div class="profile-info">
+          <p class="thai">Kanazawa Suzuka เป็นสมาชิกของกลุ่มการแสดงญี่ปุ่น <strong>ATARASHII GAKKO!</strong> เธอเป็นที่รู้จักในด้านพลังงานที่กล้าหาญ สไตล์ที่โดดเด่น และบุคลิกที่มั่นใจ 💖</p>
+
+          <ul class="profile-details thai">
+            <li>ชื่อจริง: Kanazawa Suzuka</li>
+            <li>วันเกิด: 21 พฤศจิกายน ค.ศ 2001</li>
+            <li>ส่วนสูง: ประมาณ 168 ซม.</li>
+            <li>อาชีพ: นักร้อง , นักเต้น</li>
+            <li>กลุ่ม: Atarashii Gakkou no Leaders (新しい学校のリーダーズ)</li>
+            <li>ปีที่เริ่มต้น: 2015 – ปัจจุบัน</li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="index.html" class="main-btn">กลับสู่หน้าแรก</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 I LOVE ATARASHII GAKKO! - Nirawit Klaolamom
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หน้าแรก Suzuka</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Noto Sans Thai', sans-serif;
+      background-color: #ffe0eb;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .thai { font-family: 'Noto Sans Thai', sans-serif; }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      animation: fadeDown 1.2s ease forwards;
+    }
+
+    header h1 { font-size: 32px; font-weight: 700; }
+
+    /* Navigation */
+    nav {
+      background-color: #ffe0eb;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 15px;
+      margin: 15px auto;
+      max-width: 600px;
+    }
+
+    nav a {
+      color: #ff4da6;
+      text-decoration: none;
+      padding: 8px 16px;
+      margin: 0 8px;
+      font-weight: 500;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff4da6;
+      transform: scale(1.05);
+    }
+
+    /* Container Main + Sidebar */
+    .container {
+      display: flex;
+      max-width: 1100px;
+      margin: 30px auto;
+      gap: 25px;
+      padding: 0 15px;
+    }
+
+    main {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .main-article {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      text-align: justify;
+      line-height: 1.7;
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    .main-article h2 { font-size: 24px; margin-bottom: 15px; }
+    .main-article p { font-size: 16px; color: #555; margin-bottom: 15px; }
+
+    .main-article img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 15px;
+      display: block;
+      margin: 15px auto;
+    }
+
+    /* Buttons */
+    .btn-instagram {
+      display: inline-block;
+      background-color: #ff69b4;
+      color: white;
+      font-weight: 500;
+      padding: 12px 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn-instagram:hover {
+      background-color: #ff4da6;
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    /* Sidebar */
+    aside {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar-box {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .sidebar-box h3 { margin-bottom: 10px; }
+    .sidebar-box a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #ff69b4;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-box a:hover { color: #ff1a75; transform: scale(1.03); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6c1;
+      color: #fff;
+      margin-top: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeDown { from {opacity:0; transform:translateY(-30px);} to {opacity:1; transform:translateY(0);} }
+    @keyframes fadeUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+
+    /* Responsive */
+    @media (max-width: 900px) { .container { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>หน้าแรก Kanazawa Suzuka</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับ</a>
+    <a href="work.html">ผลงาน</a>
+    <a href="suzuka.html">ติดตาม Suzuka</a>
+  </nav>
+
+  <div class="container">
+    <main>
+      <section class="main-article">
+        <h2 class="thai">ยินดีต้อนรับสู่หน้าแรก</h2>
+        <p class="thai">ติดตามข่าวสารล่าสุด กิจกรรม และรูปภาพของ Kanazawa Suzuka จากกลุ่ม ATARASHII GAKKO! ได้ที่นี่</p>
+        <img src="assets/images/SUZUKA.jpg" alt="Suzuka">
+      </section>
+
+      <section class="main-article">
+        <h2 class="thai">ข่าวสารล่าสุด</h2>
+        <p class="thai">ติดตามคอนเสิร์ตและกิจกรรมต่าง ๆ ของ Suzuka ผ่าน Instagram หรือ Social Media ด้านข้าง!</p>
+        <a href="https://www.instagram.com/japan_leaders/" target="_blank" class="btn-instagram">Instagram</a>
+      </section>
+    </main>
+
+    <aside>
+      <div class="sidebar-box">
+        <h3 class="thai">Social Media</h3>
+        <a href="https://www.youtube.com/@ATARASHIIGAKKO" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/suzuka_leaders/" target="_blank">Instagram</a>
+        <a href="https://x.com/suzuka3sister" target="_blank">X</a>
+      </div>
+
+      <div class="sidebar-box">
+        <h3 class="thai">เกี่ยวกับกลุ่ม</h3>
+        <p class="thai">ATARASHII GAKKO! เป็นกลุ่ม Performance ญี่ปุ่นที่มีเอกลักษณ์เฉพาะตัว!</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    &copy; 2025 I LOVE ATARASHII GAKKO! - Nirawit Klaolamom
+  </footer>
+
+</body>
+</html>

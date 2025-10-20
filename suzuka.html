@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ช่องทางโซเชียล Suzuka</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Noto Sans Thai', sans-serif;
+      background-color: #ffe0eb;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ff9ac1, #ff6db6);
+      color: white;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    header h1 { font-size: 32px; font-weight: 700; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ff4da6;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    nav a:hover { background-color: #ff4da6; color: #fff; transform: scale(1.05); }
+
+    /* Main */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      animation: fadeUp 1s ease forwards;
+      max-width: 900px;
+      width: 100%;
+      gap: 40px;
+    }
+
+    /* Suzuka Image */
+    .suzuka-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .suzuka-img img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .suzuka-img img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Social Section */
+    .social-section {
+      flex: 1;
+      text-align: center;
+    }
+
+    .main-title { 
+      font-size: 26px; 
+      margin-bottom: 25px; 
+      color: #ff4da6; 
+      font-weight: 700; 
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 15px auto;
+      background-color: #ff69b4;
+      color: white;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      width: 80%;
+      max-width: 280px;
+    }
+
+    .social-btn img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+    }
+
+    .social-btn:hover {
+      background-color: #ff4da6;
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6c1;
+      color: #fff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+      .suzuka-img img {
+        max-width: 250px;
+      }
+      .social-btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ช่องทางโซเชียล Suzuka</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับ</a>
+    <a href="work.html">ผลงาน</a>
+    <a href="suzuka.html">ติดตาม Suzuka</a>
+  </nav>
+
+  <main>
+    <div class="main-container">
+
+      <!-- รูป Suzuka -->
+      <div class="suzuka-img">
+        <img src="assets/images/SUZUKA PRAY.jpg" alt="Suzuka from Atarashii Gakko!">
+      </div>
+
+      <!-- Social Links -->
+      <div class="social-section">
+        <h2 class="main-title">ติดตาม Suzuka</h2>
+
+        <a href="https://www.youtube.com/@ATARASHIIGAKKO" target="_blank" class="social-btn">
+          <img src="assets/images/Youtube.png" alt="YouTube">
+          YouTube
+        </a>
+
+        <a href="https://instagram.com/suzuka_leaders" target="_blank" class="social-btn">
+          <img src="assets/images/Instagram.png" alt="Instagram">
+          Instagram
+        </a>
+
+        <a href="https://x.com/suzuka3sister" target="_blank" class="social-btn">
+          <img src="assets/images/X.png" alt="X / Twitter">
+          X
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 I LOVE ATARASHII GAKKO! - Nirawit Klaolamom
+  </footer>
+
+</body>
+</html>
